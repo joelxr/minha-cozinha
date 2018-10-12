@@ -2,8 +2,8 @@
   <nav id="nav">
     <ul>
       <li
-        :key="m.nome"
-        v-for="m in menu">
+       :key="m.nome"
+       v-for="m in menu">
         <a href="#">{{ m.nome }}</a>
         <ul>
           <li
@@ -38,59 +38,59 @@ export default {
 }
 
 #nav ul {
-	list-style: none;
-	float: left;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 
 #nav ul a {
-	display: block;
-	color: #333;
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 12px;
-	line-height: 32px;
-	padding: 0 15px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  padding: 0 15px;
 }
 
 #nav ul li {
-	position: relative;
-	float: left;
-	margin: 0;
-	padding: 0;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 
 #nav ul li:hover {
-	background: #f6f6f6;
+  background: #f6f6f6;
 }
 
 #nav ul ul {
-	display: none;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	background: #fff;
-	padding: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 0;
   border: 1px solid #ccc;
 }
 
 #nav ul ul li {
-	float: none;
-	width: 200px;
+  float: none;
+  width: 200px;
 }
 
 #nav ul ul a {
-	line-height: 120%;
-	padding: 10px 15px;
+  line-height: 120%;
+  padding: 10px 15px;
 }
 
 #nav ul ul ul {
-	top: 0;
-	left: 100%;
+  top: 0;
+  left: 100%;
 }
 
 #nav ul li:hover > ul {
-	display: block;
+  display: block;
 }
 </style>
